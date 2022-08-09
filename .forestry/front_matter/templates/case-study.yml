@@ -16,3 +16,15 @@ fields:
     schema:
       format: markdown
   label: Content
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: author-list
+      file: content/data/authors.yaml
+      path: authors
+  label: Author
